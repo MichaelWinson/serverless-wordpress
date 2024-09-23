@@ -50,7 +50,7 @@ export class WooCommerceStack extends Stack {
     const wcRdsCluster = new rds.DatabaseCluster(this, "Database", {
       engine: rds.DatabaseClusterEngine.auroraMysql({
         version: rds.AuroraMysqlEngineVersion.of(
-          "8.0.mysql_aurora.3.02.0",
+          "8.0.mysql_aurora.3.07.0",
           "8.0"
         ),
       }),
